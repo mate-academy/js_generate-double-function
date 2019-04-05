@@ -10,9 +10,11 @@
  *
  * @return {function}
  *
- * const initialFunction = x => x * x;
+ * const initialFunction = function(x) {
+ *     return x * x
+ * }
  * const doubledFunction = generateDoubleFunction(initialFunction);
- * d(5) === 50;
+ * doubledFunction(5) === 50;
  */
 function generateDoubleFunction(initialFunction) {
   // write code here
