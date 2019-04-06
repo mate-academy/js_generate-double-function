@@ -2,7 +2,7 @@
 
 const generateDoubleFunction = require('./generateDoubleFunction');
 
-test('First call returns function', () => {
+test('generateDoubleFunction returns a function', () => {
   expect(generateDoubleFunction((x) => x))
     .toBeInstanceOf(Function);
 });
@@ -15,7 +15,8 @@ test('Second call returns doubled value', () => {
     .toBe(10);
 });
 
-test('Second call works for complex initial function', () => {
+test(`Calling generateDoubleFunction result returns doubled result of the 
+  initial function.`, () => {
   const initialFunction = x => x * 2 + 2 + x;
   const doubledFunction = generateDoubleFunction(initialFunction);
 

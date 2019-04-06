@@ -14,7 +14,16 @@
  *     return x * x
  * }
  * const doubledFunction = generateDoubleFunction(initialFunction);
- * doubledFunction(5) === 50;
+ * doubledFunction(5) === 50; // 5 * 5 * 2 = 50
+ * doubledFunction(4) === 32; // 4 * 4 * 2 = 32
+ *
+ * const initialFunction = function(x) {
+ *     return x + x
+ * }
+ * const doubledFunction = generateDoubleFunction(initialFunction);
+ * doubledFunction(5) === 20; // (5 + 5) * 2 = 20
+ * doubledFunction(4) === 16; // (4 + 4) * 2 = 16
+ *
  */
 function generateDoubleFunction(initialFunction) {
   // write code here
