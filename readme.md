@@ -1,4 +1,4 @@
-# Boilerplate for JS tasks
+# Generate Double function
 
 **Read the guideline before start**
 

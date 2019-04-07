@@ -1,8 +1,8 @@
 {
-  "name": "js-task-boilerplate",
+  "name": "generate-double-function",
   "version": "1.0.0",
-  "description": "js task boilerplate",
-  "main": "src/sum.js",
+  "description": "Generate Double function",
+  "main": "src/generateDoubleFunction.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint **/*.js"
