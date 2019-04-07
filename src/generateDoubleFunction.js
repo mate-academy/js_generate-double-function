@@ -6,10 +6,6 @@
  * It takes function and returns another function. Calling returned function
  * gives 2 times bigger result then calling given function.
  *
- * @param {function} initialFunction
- *
- * @return {function}
- *
  * const initialFunction = function(x) {
  *     return x * x
  * }
@@ -24,6 +20,9 @@
  * doubledFunction(5) === 20; // (5 + 5) * 2 = 20
  * doubledFunction(4) === 16; // (4 + 4) * 2 = 16
  *
+ * @param {function} initialFunction
+ *
+ * @returns {function}
  */
 function generateDoubleFunction(initialFunction) {
   // write code here

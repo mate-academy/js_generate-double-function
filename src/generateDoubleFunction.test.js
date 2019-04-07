@@ -7,7 +7,8 @@ test('generateDoubleFunction returns a function', () => {
     .toBeInstanceOf(Function);
 });
 
-test('Second call returns doubled value', () => {
+test(`Calling generateDoubleFunction result returns doubled result of the 
+  initial function.`, () => {
   const initialFunction = x => x;
   const doubledFunction = generateDoubleFunction(initialFunction);
 
@@ -24,7 +25,7 @@ test(`Calling generateDoubleFunction result returns doubled result of the
     .toBe(34);
 });
 
-test('Second call works for zero', () => {
+test('Calling generateDoubleFunction result works for zero', () => {
   const initialFunction = x => 5 * x;
   const doubledFunction = generateDoubleFunction(initialFunction);
 
